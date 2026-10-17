@@ -19,8 +19,6 @@ from google.api_core import retry as gax_retry
 from google.cloud import storage
 
 # -------------------- ENV --------------------
-PROJECT_ID         = os.getenv("PROJECT_ID")
-BUCKET_NAME        = os.getenv("GCS_BUCKET")                        # REQUIRED
 SCRAPES_PREFIX     = os.getenv("SCRAPES_PREFIX", "scrapes")         # input
 STRUCTURED_PREFIX  = os.getenv("STRUCTURED_PREFIX", "structured")   # output
 
